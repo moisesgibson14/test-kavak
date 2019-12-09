@@ -11,7 +11,6 @@ export class DataByIdComponent implements OnInit {
   data : any;
   constructor(private route: ActivatedRoute, private _apiService: ApiService) {
     this.route.params.subscribe(res => {
-      console.log(res.id)
       if(res.id){
         this.getDataById(res.id);
       }
