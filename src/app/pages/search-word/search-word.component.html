@@ -1,11 +1,10 @@
 <div class="container">
   <div class="row" *ngIf="data.length > 0">
     <div class="col-md-4 mb-3" *ngFor="let d of data">
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">{{d.title| capitalize}}</h5>
-          <p class="card-text">{{d.body}}</p>
-          <a routerLink="/{{d.id}}" class="card-link">Ver</a>
+      <div class="card cursor-pointer h-100" routerLink="/{{d.id}}" style="width: 18rem;">
+        <h5 class="card-header">Title: {{d.title| capitalize}}</h5>
+        <div class="card-body cursor-pointer">
+          <p class="card-text">Description: {{d.title| capitalize}}</p>
         </div>
       </div>
     </div>

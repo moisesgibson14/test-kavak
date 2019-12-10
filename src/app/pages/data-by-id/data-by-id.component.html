@@ -1,8 +1,17 @@
-<div class="card" *ngIf="data">
-  <div class="card-header">
-    {{data.title | capitalize }}
-  </div>
-  <div class="card-body">
-    <p class="card-text">{{data.body}}</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h5>Detalle de Post</h5>
+    </div>
+    <div class="col-md-12">
+      <div class="card" *ngIf="data">
+        <div class="card-header">
+          {{data.title | capitalize }}
+        </div>
+        <div class="card-body">
+          <p class="card-text">{{data.body}}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
