@@ -10,14 +10,8 @@ import { ActivatedRoute } from '@angular/router';
 export class AppComponent {
   title = 'AngularTest';
 
-  constructor(private _apiSerice: ApiService, private route: ActivatedRoute){
-    let emailsUnicos = function (emails) {
-      let re = /./g;
-      let resultado = 'm.p@kavak.com'.replace(re, ''); 
-    console.log(resultado = 'm.p@kavak.com'.replace(re, ''));
-    };    
+  constructor(private _apiSerice: ApiService, private route: ActivatedRoute) {
   }
 
 
- 
 }
